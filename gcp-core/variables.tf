@@ -115,7 +115,7 @@ variable "app_name" {
 }
 
 variable "sa_path" {
-  default = ".secrets/metro-infra-dev-4e86d7cc9bda.json"
+  default = "/home/vagrant/.secrets/metro-infra-dev-4e86d7cc9bda.json"
 }
 
 variable "storage_class" {
