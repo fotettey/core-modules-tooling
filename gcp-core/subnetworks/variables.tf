@@ -46,3 +46,10 @@ variable "private_subnet3" {
 variable "public_subnet3" {
         default = "10.0.103.0/24"
     }
+
+######
+
+variable "public_cidrs" {}
+variable "private_cidrs" {}
+variable "pub_subnet_count" {}
+variable "priv_subnet_count" {}
