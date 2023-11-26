@@ -20,10 +20,8 @@ resource "google_compute_firewall" "allow-internal" {
     ports    = ["0-65535"]
   }
   source_ranges = [
-    "${var.private_subnet1}",
-    "${var.private_subnet2}",
-    "${var.public_subnet1}",
-    "${var.public_subnet2}"
+    var.public_cidrs,
+    var.private_cidrs
   ]
 }
 resource "google_compute_firewall" "allow-http" {
