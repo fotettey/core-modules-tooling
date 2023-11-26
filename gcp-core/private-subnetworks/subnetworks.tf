@@ -3,7 +3,7 @@ data "google_compute_network" "network" {
 }
 
 resource "google_compute_subnetwork" "private_subnet" {
-  name          =  "${var.project}-private-${count.index}"
+  name          =  "${var.project}-private"
   ip_cidr_range = var.private_cidrs
   network      = data.google_compute_network.network.name
   region        = var.region
