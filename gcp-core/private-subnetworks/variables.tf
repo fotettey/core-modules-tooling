@@ -51,5 +51,3 @@ variable "public_subnet3" {
 
 variable "public_cidrs" {}
 variable "private_cidrs" {}
-variable "pub_subnet_count" {}
-variable "priv_subnet_count" {}
