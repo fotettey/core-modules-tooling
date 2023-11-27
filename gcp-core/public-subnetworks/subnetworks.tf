@@ -3,10 +3,9 @@ data "google_compute_network" "network" {
 }
 
 resource "google_compute_subnetwork" "public_subnet" {
-    #provider = google-beta
-  name          =  "${var.project}-public"
-  for_each = toset( [var.public_cidrs] )
-  ip_cidr_range = each.key
+  for_each = var.public_cidrs
+  name          =  each.key
+  ip_cidr_range = each.value
   network       = data.google_compute_network.network.name
   region        = var.region
    # count and for_each ARGS cannot be used together, as they can be used to set resource number.connection {
