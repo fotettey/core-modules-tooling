@@ -6,6 +6,12 @@
 *.tfstate.*
 */*/tfplan
 */gcp-core/tfplan
+gcp-core/state-bucket/.terraform
+gcp-core/state-bucket/.terraform.*
+gcp-core/state-bucket/terraform.*
+*/*/*/.terraform
+*/*/*/.terraform.*
+*/*/*/terraform.*
 
 
 # Crash log files

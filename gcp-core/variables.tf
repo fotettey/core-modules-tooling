@@ -1,4 +1,6 @@
-variable "stage" {}
+variable "stage" {
+  default = "dev"
+}
 
 variable "project" {
         default = "metro-infra-dev"
