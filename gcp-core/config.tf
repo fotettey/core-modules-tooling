@@ -9,7 +9,7 @@ terraform {
   backend "gcs" {
     bucket  = "metro-infra-states"
     prefix  = "terraform/state"
-    credentials = "/home/vagrant/projects/.secrets/metro-infra-dev-4e86d7cc9bda.json"
+    credentials = "/home/vagrant/projects/software.factory/platform.infra.gcp.secrets/metro-infra-dev-e51b7089f290.json"
   }
 
 }
