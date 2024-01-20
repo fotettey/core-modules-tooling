@@ -11,7 +11,6 @@ terraform {
     prefix  = "terraform/state"
     credentials = "/home/vagrant/projects/software.factory/platform.infra.gcp.secrets/metro-infra-dev-e51b7089f290.json"
   }
-
 }
 
 provider "google" {

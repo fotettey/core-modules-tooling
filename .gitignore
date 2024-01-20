@@ -12,6 +12,16 @@ gcp-core/state-bucket/terraform.*
 */*/*/.terraform
 */*/*/.terraform.*
 */*/*/terraform.*
+/home/vagrant/projects/core-modules-tooling/gcp-core/state-bucket/*.tfstate
+/home/vagrant/projects/core-modules-tooling/gcp-core/state-bucket/*.tfstate.*
+/home/vagrant/projects/core-modules-tooling/gcp-core/state-bucket/tfplan
+/home/vagrant/projects/core-modules-tooling/gcp-core/state-bucket
+
+
+
+
+
+
 
 
 # Crash log files
